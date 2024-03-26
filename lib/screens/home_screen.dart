@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:store_repo/widgets/common/appbar_widget.dart';
+import 'package:store_repo/widgets/common/drawer.dart';
 import 'package:store_repo/widgets/common/marquee_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -7,6 +9,8 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: const AppBarWidget(),
+      drawer: const DrawerWidget(),
       body: SingleChildScrollView(
         child: Column(
           // crossAxisAlignment: CrossAxisAlignment.stretch,
