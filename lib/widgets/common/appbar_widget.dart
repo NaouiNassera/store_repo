@@ -7,7 +7,10 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: SvgPicture.asset('assets/images/logo.svg'),
+      title: SvgPicture.asset(
+        'assets/images/logo.svg',
+        width: 25,
+      ),
       centerTitle: true,
       actions: [
         IconButton(
